@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>types/internal | @egomobile/http-server</title>
+	<title>validators/params | @egomobile/http-server</title>
 	<meta name="description" content="Documentation for @egomobile/http-server">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@egomobile/http-server</a>
 				</li>
 				<li>
-					<a href="types_internal.html">types/internal</a>
+					<a href="validators_params.html">validators/params</a>
 				</li>
 			</ul>
-			<h1>Module types/internal</h1>
+			<h1>Module validators/params</h1>
 		</div>
 	</div>
 </header>
@@ -70,39 +70,49 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
+							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/types_internal.RequestHandlerContext.html" class="tsd-kind-icon">Request<wbr>Handler<wbr>Context</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Type aliases</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="types_internal.html#GroupedHttpRequestHandlers" class="tsd-kind-icon">Grouped<wbr>Http<wbr>Request<wbr>Handlers</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="validators_params.html#params" class="tsd-kind-icon">params</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
-					<a name="GroupedHttpRequestHandlers" class="tsd-anchor"></a>
-					<h3>Grouped<wbr>Http<wbr>Request<wbr>Handlers</h3>
-					<div class="tsd-signature tsd-kind-icon">Grouped<wbr>Http<wbr>Request<wbr>Handlers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/1f229df/src/types/internal.ts#L4">src/types/internal.ts:4</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>method: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="../interfaces/types_internal.RequestHandlerContext.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestHandlerContext</a><span class="tsd-signature-symbol">[]</span></h5>
-							</li>
-						</ul>
-					</div>
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="params" class="tsd-anchor"></a>
+					<h3>params</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">params<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#HttpPathValidator" class="tsd-signature-type" data-tsd-kind="Type alias">HttpPathValidator</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/1f229df/src/validators/params.ts#L35">src/validators/params.ts:35</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new path validator that extracts parameters
+										from the path and writes the data to &#39;params&#39; property
+									of request context as key/value pairs.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path with parameters.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="types.html#HttpPathValidator" class="tsd-signature-type" data-tsd-kind="Type alias">HttpPathValidator</a></h4>
+							<p>The new path validator.</p>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -142,7 +152,7 @@
 					<li class=" tsd-kind-module">
 						<a href="types.html">types</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="types_internal.html">types/internal</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -151,18 +161,15 @@
 					<li class=" tsd-kind-module">
 						<a href="validators.html">validators</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="validators_params.html">validators/params</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/types_internal.RequestHandlerContext.html" class="tsd-kind-icon">Request<wbr>Handler<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="types_internal.html#GroupedHttpRequestHandlers" class="tsd-kind-icon">Grouped<wbr>Http<wbr>Request<wbr>Handlers</a>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="validators_params.html#params" class="tsd-kind-icon">params</a>
 					</li>
 				</ul>
 			</nav>

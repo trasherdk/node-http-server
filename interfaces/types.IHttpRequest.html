@@ -92,11 +92,11 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="types.IHttpRequest.html#aborted" class="tsd-kind-icon">aborted</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="types.IHttpRequest.html#body" class="tsd-kind-icon">body</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.IHttpRequest.html#body" class="tsd-kind-icon">body</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="types.IHttpRequest.html#complete" class="tsd-kind-icon">complete</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="types.IHttpRequest.html#connection" class="tsd-kind-icon">connection</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="types.IHttpRequest.html#destroyed" class="tsd-kind-icon">destroyed</a></li>
@@ -106,6 +106,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="types.IHttpRequest.html#httpVersionMinor" class="tsd-kind-icon">http<wbr>Version<wbr>Minor</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="types.IHttpRequest.html#method" class="tsd-kind-icon">method</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="types.IHttpRequest.html#params" class="tsd-kind-icon">params</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.IHttpRequest.html#query" class="tsd-kind-icon">query</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="types.IHttpRequest.html#rawHeaders" class="tsd-kind-icon">raw<wbr>Headers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="types.IHttpRequest.html#rawTrailers" class="tsd-kind-icon">raw<wbr>Trailers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="types.IHttpRequest.html#readable" class="tsd-kind-icon">readable</a></li>
@@ -160,7 +161,7 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 					<a name="aborted" class="tsd-anchor"></a>
@@ -173,14 +174,13 @@
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="body" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> body</h3>
 					<div class="tsd-signature tsd-kind-icon">body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from IncomingMessage.body</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/2d0cc2f/index.d.ts#L7">index.d.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/1f229df/src/types/index.ts#L112">src/types/index.ts:112</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -289,12 +289,22 @@
 					<aside class="tsd-sources">
 						<p>Inherited from IncomingMessage.params</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/2d0cc2f/index.d.ts#L11">index.d.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/1f229df/index.d.ts#L7">index.d.ts:7</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="query" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> query</h3>
+					<div class="tsd-signature tsd-kind-icon">query<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ParsedUrlQuery</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/1f229df/src/types/index.ts#L116">src/types/index.ts:116</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>List of parameters.</p>
+							<p>List of query parameters, if parsed.</p>
 						</div>
 					</div>
 				</section>
@@ -2502,7 +2512,7 @@
 						<a href="../modules/middlewares_json.html">middlewares/json</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/middlewares_params.html">middlewares/params</a>
+						<a href="../modules/middlewares_query.html">middlewares/query</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/types.html">types</a>
@@ -2512,6 +2522,12 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/utils.html">utils</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/validators.html">validators</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/validators_params.html">validators/params</a>
 					</li>
 				</ul>
 			</nav>
@@ -2528,7 +2544,7 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 								<a href="types.IHttpRequest.html#aborted" class="tsd-kind-icon">aborted</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="types.IHttpRequest.html#body" class="tsd-kind-icon">body</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
@@ -2557,6 +2573,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="types.IHttpRequest.html#params" class="tsd-kind-icon">params</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="types.IHttpRequest.html#query" class="tsd-kind-icon">query</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 								<a href="types.IHttpRequest.html#rawHeaders" class="tsd-kind-icon">raw<wbr>Headers</a>
@@ -2757,6 +2776,7 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>

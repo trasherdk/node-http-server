@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>types/internal | @egomobile/http-server</title>
+	<title>middlewares/query | @egomobile/http-server</title>
 	<meta name="description" content="Documentation for @egomobile/http-server">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@egomobile/http-server</a>
 				</li>
 				<li>
-					<a href="types_internal.html">types/internal</a>
+					<a href="middlewares_query.html">middlewares/query</a>
 				</li>
 			</ul>
-			<h1>Module types/internal</h1>
+			<h1>Module middlewares/query</h1>
 		</div>
 	</div>
 </header>
@@ -70,39 +70,40 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
+							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/types_internal.RequestHandlerContext.html" class="tsd-kind-icon">Request<wbr>Handler<wbr>Context</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Type aliases</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="types_internal.html#GroupedHttpRequestHandlers" class="tsd-kind-icon">Grouped<wbr>Http<wbr>Request<wbr>Handlers</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="middlewares_query.html#query" class="tsd-kind-icon">query</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
-					<a name="GroupedHttpRequestHandlers" class="tsd-anchor"></a>
-					<h3>Grouped<wbr>Http<wbr>Request<wbr>Handlers</h3>
-					<div class="tsd-signature tsd-kind-icon">Grouped<wbr>Http<wbr>Request<wbr>Handlers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/1f229df/src/types/internal.ts#L4">src/types/internal.ts:4</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>method: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="../interfaces/types_internal.RequestHandlerContext.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestHandlerContext</a><span class="tsd-signature-symbol">[]</span></h5>
-							</li>
-						</ul>
-					</div>
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="query" class="tsd-anchor"></a>
+					<h3>query</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">query<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#HttpMiddleware" class="tsd-signature-type" data-tsd-kind="Type alias">HttpMiddleware</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/1f229df/src/middlewares/query.ts#L26">src/middlewares/query.ts:26</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new middleware that extracts query parameters
+										from URL and writes the data to &#39;query&#39; property
+									of request context as key/value pairs.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="types.html#HttpMiddleware" class="tsd-signature-type" data-tsd-kind="Type alias">HttpMiddleware</a></h4>
+							<p>The new middleware.</p>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -136,13 +137,13 @@
 					<li class=" tsd-kind-module">
 						<a href="middlewares_json.html">middlewares/json</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="middlewares_query.html">middlewares/query</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="types.html">types</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="types_internal.html">types/internal</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -158,11 +159,8 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/types_internal.RequestHandlerContext.html" class="tsd-kind-icon">Request<wbr>Handler<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="types_internal.html#GroupedHttpRequestHandlers" class="tsd-kind-icon">Grouped<wbr>Http<wbr>Request<wbr>Handlers</a>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="middlewares_query.html#query" class="tsd-kind-icon">query</a>
 					</li>
 				</ul>
 			</nav>
