@@ -87,6 +87,7 @@
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#IHttpResponse" class="tsd-kind-icon">IHttp<wbr>Response</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#IHttpServer" class="tsd-kind-icon">IHttp<wbr>Server</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#IJsonOptions" class="tsd-kind-icon">IJson<wbr>Options</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#IPrettyErrorsOptions" class="tsd-kind-icon">IPretty<wbr>Errors<wbr>Options</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#IValidateOptions" class="tsd-kind-icon">IValidate<wbr>Options</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#NextFunction" class="tsd-kind-icon">Next<wbr>Function</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#ParseError" class="tsd-kind-icon">Parse<wbr>Error</a></li>
@@ -96,12 +97,14 @@
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#cookies" class="tsd-kind-icon">cookies</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#default" class="tsd-kind-icon">default</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#defaultBodyLimit" class="tsd-kind-icon">default<wbr>Body<wbr>Limit</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#defaultGetStatusCodeFromError" class="tsd-kind-icon">default<wbr>Get<wbr>Status<wbr>Code<wbr>From<wbr>Error</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#defaultLimitReachedHandler" class="tsd-kind-icon">default<wbr>Limit<wbr>Reached<wbr>Handler</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#defaultParseErrorHandler" class="tsd-kind-icon">default<wbr>Parse<wbr>Error<wbr>Handler</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#defaultValidationFailedHandler" class="tsd-kind-icon">default<wbr>Validation<wbr>Failed<wbr>Handler</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#json" class="tsd-kind-icon">json</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#lang" class="tsd-kind-icon">lang</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#params" class="tsd-kind-icon">params</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#prettyErrors" class="tsd-kind-icon">pretty<wbr>Errors</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#query" class="tsd-kind-icon">query</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="index.html#validate" class="tsd-kind-icon">validate</a></li>
 							</ul>
@@ -233,6 +236,11 @@
 					Re-exports <a href="../interfaces/middlewares_json.IJsonOptions.html">IJsonOptions</a>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="IPrettyErrorsOptions" class="tsd-anchor"></a>
+					<h3>IPretty<wbr>Errors<wbr>Options</h3>
+					Re-exports <a href="../interfaces/errors_prettyErrors.IPrettyErrorsOptions.html">IPrettyErrorsOptions</a>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
 					<a name="IValidateOptions" class="tsd-anchor"></a>
 					<h3>IValidate<wbr>Options</h3>
 					Re-exports <a href="../interfaces/middlewares_validate.IValidateOptions.html">IValidateOptions</a>
@@ -278,6 +286,11 @@
 					Re-exports <a href="middlewares.html#defaultBodyLimit">defaultBodyLimit</a>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="defaultGetStatusCodeFromError" class="tsd-anchor"></a>
+					<h3>default<wbr>Get<wbr>Status<wbr>Code<wbr>From<wbr>Error</h3>
+					Re-exports <a href="errors.html#defaultGetStatusCodeFromError">defaultGetStatusCodeFromError</a>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
 					<a name="defaultLimitReachedHandler" class="tsd-anchor"></a>
 					<h3>default<wbr>Limit<wbr>Reached<wbr>Handler</h3>
 					Re-exports <a href="middlewares.html#defaultLimitReachedHandler">defaultLimitReachedHandler</a>
@@ -306,6 +319,11 @@
 					<a name="params" class="tsd-anchor"></a>
 					<h3>params</h3>
 					Re-exports <a href="validators_params.html#params">params</a>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="prettyErrors" class="tsd-anchor"></a>
+					<h3>pretty<wbr>Errors</h3>
+					Re-exports <a href="errors_prettyErrors.html#prettyErrors">prettyErrors</a>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
 					<a name="query" class="tsd-anchor"></a>
@@ -473,7 +491,7 @@
 					<div class="tsd-signature tsd-kind-icon">schema<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Root</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/index.ts#L453">src/index.ts:453</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/index.ts#L453">src/index.ts:453</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -490,7 +508,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/index.ts#L84">src/index.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/index.ts#L84">src/index.ts:84</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -530,7 +548,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/index.ts#L33">src/index.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/index.ts#L33">src/index.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -573,7 +591,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/index.ts#L51">src/index.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/index.ts#L51">src/index.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -619,6 +637,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="errors_parse.html">errors/parse</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="errors_prettyErrors.html">errors/pretty<wbr>Errors</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="index.html">index</a>
@@ -709,6 +730,9 @@
 						<a href="index.html#IJsonOptions" class="tsd-kind-icon">IJson<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="index.html#IPrettyErrorsOptions" class="tsd-kind-icon">IPretty<wbr>Errors<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
 						<a href="index.html#IValidateOptions" class="tsd-kind-icon">IValidate<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-reference tsd-parent-kind-module">
@@ -736,6 +760,9 @@
 						<a href="index.html#defaultBodyLimit" class="tsd-kind-icon">default<wbr>Body<wbr>Limit</a>
 					</li>
 					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="index.html#defaultGetStatusCodeFromError" class="tsd-kind-icon">default<wbr>Get<wbr>Status<wbr>Code<wbr>From<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
 						<a href="index.html#defaultLimitReachedHandler" class="tsd-kind-icon">default<wbr>Limit<wbr>Reached<wbr>Handler</a>
 					</li>
 					<li class=" tsd-kind-reference tsd-parent-kind-module">
@@ -752,6 +779,9 @@
 					</li>
 					<li class=" tsd-kind-reference tsd-parent-kind-module">
 						<a href="index.html#params" class="tsd-kind-icon">params</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="index.html#prettyErrors" class="tsd-kind-icon">pretty<wbr>Errors</a>
 					</li>
 					<li class=" tsd-kind-reference tsd-parent-kind-module">
 						<a href="index.html#query" class="tsd-kind-icon">query</a>

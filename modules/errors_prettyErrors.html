@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>errors | @egomobile/http-server</title>
+	<title>errors/prettyErrors | @egomobile/http-server</title>
 	<meta name="description" content="Documentation for @egomobile/http-server">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@egomobile/http-server</a>
 				</li>
 				<li>
-					<a href="errors.html">errors</a>
+					<a href="errors_prettyErrors.html">errors/prettyErrors</a>
 				</li>
 			</ul>
-			<h1>Module errors</h1>
+			<h1>Module errors/prettyErrors</h1>
 		</div>
 	</div>
 </header>
@@ -70,74 +70,91 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>References</h3>
+							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="errors.html#EntityTooLargeError" class="tsd-kind-icon">Entity<wbr>Too<wbr>Large<wbr>Error</a></li>
-								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="errors.html#IPrettyErrorsOptions" class="tsd-kind-icon">IPretty<wbr>Errors<wbr>Options</a></li>
-								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="errors.html#ParseError" class="tsd-kind-icon">Parse<wbr>Error</a></li>
-								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="errors.html#prettyErrors" class="tsd-kind-icon">pretty<wbr>Errors</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/errors_prettyErrors.IPrettyErrorsOptions.html" class="tsd-kind-icon">IPretty<wbr>Errors<wbr>Options</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="errors.html#defaultGetStatusCodeFromError" class="tsd-kind-icon">default<wbr>Get<wbr>Status<wbr>Code<wbr>From<wbr>Error</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="errors_prettyErrors.html#prettyErrors" class="tsd-kind-icon">pretty<wbr>Errors</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>References</h2>
-				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
-					<a name="EntityTooLargeError" class="tsd-anchor"></a>
-					<h3>Entity<wbr>Too<wbr>Large<wbr>Error</h3>
-					Re-exports <a href="../classes/errors_entityTooLarge.EntityTooLargeError.html">EntityTooLargeError</a>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
-					<a name="IPrettyErrorsOptions" class="tsd-anchor"></a>
-					<h3>IPretty<wbr>Errors<wbr>Options</h3>
-					Re-exports <a href="../interfaces/errors_prettyErrors.IPrettyErrorsOptions.html">IPrettyErrorsOptions</a>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
-					<a name="ParseError" class="tsd-anchor"></a>
-					<h3>Parse<wbr>Error</h3>
-					Re-exports <a href="../classes/errors_parse.ParseError.html">ParseError</a>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
-					<a name="prettyErrors" class="tsd-anchor"></a>
-					<h3>pretty<wbr>Errors</h3>
-					Re-exports <a href="errors_prettyErrors.html#prettyErrors">prettyErrors</a>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="defaultGetStatusCodeFromError" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> default<wbr>Get<wbr>Status<wbr>Code<wbr>From<wbr>Error</h3>
+					<a name="prettyErrors" class="tsd-anchor"></a>
+					<h3>pretty<wbr>Errors</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">default<wbr>Get<wbr>Status<wbr>Code<wbr>From<wbr>Error<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">pretty<wbr>Errors<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#HttpErrorHandler" class="tsd-signature-type" data-tsd-kind="Type alias">HttpErrorHandler</a></li>
+						<li class="tsd-signature tsd-kind-icon">pretty<wbr>Errors<span class="tsd-signature-symbol">(</span>code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#HttpErrorHandler" class="tsd-signature-type" data-tsd-kind="Type alias">HttpErrorHandler</a></li>
+						<li class="tsd-signature tsd-kind-icon">pretty<wbr>Errors<span class="tsd-signature-symbol">(</span>getStatusCode<span class="tsd-signature-symbol">: </span><a href="types.html#GetStatusCodeFromError" class="tsd-signature-type" data-tsd-kind="Type alias">GetStatusCodeFromError</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#HttpErrorHandler" class="tsd-signature-type" data-tsd-kind="Type alias">HttpErrorHandler</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/errors/index.ts#L23">src/errors/index.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/errors/prettyErrors.ts#L56">src/errors/prettyErrors.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>The default handler, that returns the HTTP status code by error object.</p>
+									<p>Creates a new error handler, that outputs pretty error messages.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p><a href="https://github.com/poppinss/youch">https://github.com/poppinss/youch</a></p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">createServer</span><span style="color: #000000">, { </span><span style="color: #001080">prettyErrors</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egomobile/http-server&#039;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">app</span><span style="color: #000000"> = </span><span style="color: #795E26">createServer</span><span style="color: #000000">()</span>
+
+<span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;/&#039;</span><span style="color: #000000">, </span><span style="color: #0000FF">async</span><span style="color: #000000"> (</span><span style="color: #001080">request</span><span style="color: #000000">, </span><span style="color: #001080">response</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">throw</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">ReferenceError</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Oops! Something went wrong!&#039;</span><span style="color: #000000">)</span>
+<span style="color: #000000">})</span>
+
+<span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #795E26">setErrorHandler</span><span style="color: #000000">(</span><span style="color: #795E26">prettyErrors</span><span style="color: #000000">())</span>
+
+<span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #795E26">listen</span><span style="color: #000000">()</span>
+</code></pre>
+									</dd>
+								</dl>
 							</div>
+							<h4 class="tsd-returns-title">Returns <a href="types.html#HttpErrorHandler" class="tsd-signature-type" data-tsd-kind="Type alias">HttpErrorHandler</a></h4>
+							<p>The new handler.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/errors/prettyErrors.ts#L57">src/errors/prettyErrors.ts:57</a></li>
+								</ul>
+							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>error: <span class="tsd-signature-type">any</span></h5>
+									<h5>code: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>500</p>
+							<h4 class="tsd-returns-title">Returns <a href="types.html#HttpErrorHandler" class="tsd-signature-type" data-tsd-kind="Type alias">HttpErrorHandler</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/errors/prettyErrors.ts#L58">src/errors/prettyErrors.ts:58</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>getStatusCode: <a href="types.html#GetStatusCodeFromError" class="tsd-signature-type" data-tsd-kind="Type alias">GetStatusCodeFromError</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="types.html#HttpErrorHandler" class="tsd-signature-type" data-tsd-kind="Type alias">HttpErrorHandler</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -152,7 +169,7 @@
 					<li class=" tsd-kind-module">
 						<a href="__tests___utils.html">__tests__/utils</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="errors.html">errors</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -161,7 +178,7 @@
 					<li class=" tsd-kind-module">
 						<a href="errors_parse.html">errors/parse</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="errors_prettyErrors.html">errors/pretty<wbr>Errors</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -207,20 +224,11 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="errors.html#EntityTooLargeError" class="tsd-kind-icon">Entity<wbr>Too<wbr>Large<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="errors.html#IPrettyErrorsOptions" class="tsd-kind-icon">IPretty<wbr>Errors<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="errors.html#ParseError" class="tsd-kind-icon">Parse<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="errors.html#prettyErrors" class="tsd-kind-icon">pretty<wbr>Errors</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/errors_prettyErrors.IPrettyErrorsOptions.html" class="tsd-kind-icon">IPretty<wbr>Errors<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="errors.html#defaultGetStatusCodeFromError" class="tsd-kind-icon">default<wbr>Get<wbr>Status<wbr>Code<wbr>From<wbr>Error</a>
+						<a href="errors_prettyErrors.html#prettyErrors" class="tsd-kind-icon">pretty<wbr>Errors</a>
 					</li>
 				</ul>
 			</nav>

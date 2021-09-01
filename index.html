@@ -339,6 +339,27 @@
 
 <span style="color: #795E26">main</span><span style="color: #000000">().</span><span style="color: #795E26">catch</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">error</span><span style="color: #000000">);</span>
 </code></pre>
+				<a href="#pretty-error-pages" id="pretty-error-pages" style="color: inherit; text-decoration: none;">
+					<h3>Pretty error pages</h3>
+				</a>
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">createServer</span><span style="color: #000000">, { </span><span style="color: #001080">prettyErrors</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@egomobile/http-server&quot;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">async</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">main</span><span style="color: #000000">() {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// ...</span>
+
+<span style="color: #000000">  </span><span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #795E26">setErrorHandler</span><span style="color: #000000">(</span><span style="color: #795E26">prettyErrors</span><span style="color: #000000">());</span>
+
+<span style="color: #000000">  </span><span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;/&quot;</span><span style="color: #000000">, </span><span style="color: #0000FF">async</span><span style="color: #000000"> (</span><span style="color: #001080">request</span><span style="color: #000000">, </span><span style="color: #001080">response</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #AF00DB">throw</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Error</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;Oops! Something went wrong!&quot;</span><span style="color: #000000">);</span>
+<span style="color: #000000">  });</span>
+
+<span style="color: #000000">  </span><span style="color: #008000">// ...</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #795E26">main</span><span style="color: #000000">().</span><span style="color: #795E26">catch</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">error</span><span style="color: #000000">);</span>
+</code></pre>
+				<p>A possible result could be:</p>
+				<p><kbd><img src="./assets/screenshot.png" /></kbd></p>
 				<a href="#credits" id="credits" style="color: inherit; text-decoration: none;">
 					<h2>Credits</h2>
 				</a>
@@ -346,6 +367,7 @@
 				<ul>
 					<li><a href="https://joi.dev/">joi</a> by <a href="https://github.com/sideway">Sideway Inc.</a></li>
 					<li><a href="https://github.com/lukeed/regexparam">regexparam</a> by <a href="https://github.com/lukeed">Luke Edwards</a></li>
+					<li><a href="https://github.com/poppinss/youch">Youch!</a> by <a href="https://github.com/poppinss">Poppinss</a></li>
 				</ul>
 				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
 					<h2>Documentation</h2>
@@ -370,6 +392,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/errors_parse.html">errors/parse</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/errors_prettyErrors.html">errors/pretty<wbr>Errors</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/index.html">index</a>

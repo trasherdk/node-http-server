@@ -82,6 +82,7 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="types.html#GetStatusCodeFromError" class="tsd-kind-icon">Get<wbr>Status<wbr>Code<wbr>From<wbr>Error</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="types.html#HttpErrorHandler" class="tsd-kind-icon">Http<wbr>Error<wbr>Handler</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="types.html#HttpMiddleware" class="tsd-kind-icon">Http<wbr>Middleware</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="types.html#HttpNotFoundHandler" class="tsd-kind-icon">Http<wbr>Not<wbr>Found<wbr>Handler</a></li>
@@ -103,12 +104,54 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="GetStatusCodeFromError" class="tsd-anchor"></a>
+					<h3>Get<wbr>Status<wbr>Code<wbr>From<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Get<wbr>Status<wbr>Code<wbr>From<wbr>Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L27">src/types/index.ts:27</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Returns a status code from an error object.</p>
+											</div>
+										</div>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>error: <span class="tsd-signature-type">any</span></h5>
+												<div class="tsd-comment tsd-typography">
+													<div class="lead">
+														<p>The error object.</p>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+										<p>The status code.</p>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="HttpErrorHandler" class="tsd-anchor"></a>
 					<h3>Http<wbr>Error<wbr>Handler</h3>
 					<div class="tsd-signature tsd-kind-icon">Http<wbr>Error<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IncomingMessage</span>, response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerResponse</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/types/index.ts#L27">src/types/index.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L36">src/types/index.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -165,7 +208,7 @@
 					<div class="tsd-signature tsd-kind-icon">Http<wbr>Middleware<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a>, response<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpResponse</a>, next<span class="tsd-signature-symbol">: </span><a href="types.html#NextFunction" class="tsd-signature-type" data-tsd-kind="Type alias">NextFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/types/index.ts#L36">src/types/index.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L45">src/types/index.ts:45</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -222,7 +265,7 @@
 					<div class="tsd-signature tsd-kind-icon">Http<wbr>Not<wbr>Found<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IncomingMessage</span>, response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerResponse</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/types/index.ts#L44">src/types/index.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L53">src/types/index.ts:53</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -271,7 +314,7 @@
 					<div class="tsd-signature tsd-kind-icon">Http<wbr>Options<wbr>OrMiddlewares<span class="tsd-signature-symbol">:</span> <a href="../interfaces/types.IHttpRequestHandlerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequestHandlerOptions</a><span class="tsd-signature-symbol"> | </span><a href="types.html#HttpMiddleware" class="tsd-signature-type" data-tsd-kind="Type alias">HttpMiddleware</a><span class="tsd-signature-symbol"> | </span><a href="types.html#HttpMiddleware" class="tsd-signature-type" data-tsd-kind="Type alias">HttpMiddleware</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/types/index.ts#L49">src/types/index.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L58">src/types/index.ts:58</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -286,7 +329,7 @@
 					<div class="tsd-signature tsd-kind-icon">Http<wbr>Path<wbr>Validator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IncomingMessage</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/types/index.ts#L58">src/types/index.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L67">src/types/index.ts:67</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -328,7 +371,7 @@
 					<div class="tsd-signature tsd-kind-icon">Http<wbr>Request<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a>, response<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/types/index.ts#L66">src/types/index.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L75">src/types/index.ts:75</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -377,7 +420,7 @@
 					<div class="tsd-signature tsd-kind-icon">Http<wbr>Request<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> | </span><a href="types.html#HttpPathValidator" class="tsd-signature-type" data-tsd-kind="Type alias">HttpPathValidator</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/types/index.ts#L71">src/types/index.ts:71</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L80">src/types/index.ts:80</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -392,7 +435,7 @@
 					<div class="tsd-signature tsd-kind-icon">Next<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/types/index.ts#L529">src/types/index.ts:529</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L538">src/types/index.ts:538</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -428,7 +471,7 @@
 					<div class="tsd-signature tsd-kind-icon">Nilable&lt;T&gt;<span class="tsd-signature-symbol">:</span> <a href="types.html#Nullable" class="tsd-signature-type" data-tsd-kind="Type alias">Nullable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="types.html#Optional" class="tsd-signature-type" data-tsd-kind="Type alias">Optional</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/types/index.ts#L534">src/types/index.ts:534</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L543">src/types/index.ts:543</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -449,7 +492,7 @@
 					<div class="tsd-signature tsd-kind-icon">Nullable&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/types/index.ts#L539">src/types/index.ts:539</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L548">src/types/index.ts:548</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -470,7 +513,7 @@
 					<div class="tsd-signature tsd-kind-icon">Optional&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/types/index.ts#L544">src/types/index.ts:544</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L553">src/types/index.ts:553</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -491,7 +534,7 @@
 					<div class="tsd-signature tsd-kind-icon">Parse<wbr>Error<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><a href="../classes/errors_parse.ParseError.html" class="tsd-signature-type" data-tsd-kind="Class">ParseError</a>, request<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a>, response<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/types/index.ts#L553">src/types/index.ts:553</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L562">src/types/index.ts:562</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -548,7 +591,7 @@
 					<div class="tsd-signature tsd-kind-icon">Validation<wbr>Failed<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JoiValidationError</span>, request<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a>, response<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/types/index.ts#L562">src/types/index.ts:562</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L571">src/types/index.ts:571</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -620,6 +663,9 @@
 						<a href="errors_parse.html">errors/parse</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="errors_prettyErrors.html">errors/pretty<wbr>Errors</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="index.html">index</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -676,6 +722,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/types.IHttpServer.html" class="tsd-kind-icon">IHttp<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="types.html#GetStatusCodeFromError" class="tsd-kind-icon">Get<wbr>Status<wbr>Code<wbr>From<wbr>Error</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="types.html#HttpErrorHandler" class="tsd-kind-icon">Http<wbr>Error<wbr>Handler</a>
