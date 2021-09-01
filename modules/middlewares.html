@@ -74,9 +74,11 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="middlewares.html#IBufferOptions" class="tsd-kind-icon">IBuffer<wbr>Options</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="middlewares.html#IJsonOptions" class="tsd-kind-icon">IJson<wbr>Options</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="middlewares.html#IValidateOptions" class="tsd-kind-icon">IValidate<wbr>Options</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="middlewares.html#buffer" class="tsd-kind-icon">buffer</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="middlewares.html#json" class="tsd-kind-icon">json</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="middlewares.html#query" class="tsd-kind-icon">query</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="middlewares.html#validate" class="tsd-kind-icon">validate</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -90,6 +92,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="middlewares.html#defaultLimitReachedHandler" class="tsd-kind-icon">default<wbr>Limit<wbr>Reached<wbr>Handler</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="middlewares.html#defaultParseErrorHandler" class="tsd-kind-icon">default<wbr>Parse<wbr>Error<wbr>Handler</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="middlewares.html#defaultValidationFailedHandler" class="tsd-kind-icon">default<wbr>Validation<wbr>Failed<wbr>Handler</a></li>
 							</ul>
 						</section>
 					</div>
@@ -108,6 +111,11 @@
 					Re-exports <a href="../interfaces/middlewares_json.IJsonOptions.html">IJsonOptions</a>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="IValidateOptions" class="tsd-anchor"></a>
+					<h3>IValidate<wbr>Options</h3>
+					Re-exports <a href="../interfaces/middlewares_validate.IValidateOptions.html">IValidateOptions</a>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
 					<a name="buffer" class="tsd-anchor"></a>
 					<h3>buffer</h3>
 					Re-exports <a href="middlewares_buffer.html#buffer">buffer</a>
@@ -122,6 +130,11 @@
 					<h3>query</h3>
 					Re-exports <a href="middlewares_query.html#query">query</a>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="validate" class="tsd-anchor"></a>
+					<h3>validate</h3>
+					Re-exports <a href="middlewares_validate.html#validate">validate</a>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
@@ -131,7 +144,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Body<wbr>Limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">134217728</span><span class="tsd-signature-symbol"> = 134217728</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/18543df/src/middlewares/index.ts#L21">src/middlewares/index.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/143d042/src/middlewares/index.ts#L21">src/middlewares/index.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -153,7 +166,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/18543df/src/middlewares/index.ts#L29">src/middlewares/index.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/143d042/src/middlewares/index.ts#L29">src/middlewares/index.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -190,7 +203,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/18543df/src/middlewares/index.ts#L46">src/middlewares/index.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/143d042/src/middlewares/index.ts#L46">src/middlewares/index.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -220,6 +233,49 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="defaultValidationFailedHandler" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> default<wbr>Validation<wbr>Failed<wbr>Handler</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">default<wbr>Validation<wbr>Failed<wbr>Handler<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidationError</span>, request<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a>, response<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/143d042/src/middlewares/index.ts#L63">src/middlewares/index.ts:63</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The default &#39;parse error&#39; handler.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>error: <span class="tsd-signature-type">ValidationError</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The error.</p>
+									</div>
+								</li>
+								<li>
+									<h5>request: <a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The request context.</p>
+									</div>
+								</li>
+								<li>
+									<h5>response: <a href="../interfaces/types.IHttpResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpResponse</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The response context.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -259,6 +315,9 @@
 						<a href="middlewares_query.html">middlewares/query</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="middlewares_validate.html">middlewares/validate</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="types.html">types</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -284,6 +343,9 @@
 						<a href="middlewares.html#IJsonOptions" class="tsd-kind-icon">IJson<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="middlewares.html#IValidateOptions" class="tsd-kind-icon">IValidate<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
 						<a href="middlewares.html#buffer" class="tsd-kind-icon">buffer</a>
 					</li>
 					<li class=" tsd-kind-reference tsd-parent-kind-module">
@@ -291,6 +353,9 @@
 					</li>
 					<li class=" tsd-kind-reference tsd-parent-kind-module">
 						<a href="middlewares.html#query" class="tsd-kind-icon">query</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="middlewares.html#validate" class="tsd-kind-icon">validate</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="middlewares.html#defaultBodyLimit" class="tsd-kind-icon">default<wbr>Body<wbr>Limit</a>
@@ -300,6 +365,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="middlewares.html#defaultParseErrorHandler" class="tsd-kind-icon">default<wbr>Parse<wbr>Error<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="middlewares.html#defaultValidationFailedHandler" class="tsd-kind-icon">default<wbr>Validation<wbr>Failed<wbr>Handler</a>
 					</li>
 				</ul>
 			</nav>
