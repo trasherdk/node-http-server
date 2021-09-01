@@ -190,6 +190,47 @@
 
 <span style="color: #795E26">main</span><span style="color: #000000">().</span><span style="color: #795E26">catch</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">error</span><span style="color: #000000">);</span>
 </code></pre>
+				<a href="#cookies" id="cookies" style="color: inherit; text-decoration: none;">
+					<h4>cookies</h4>
+				</a>
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">createServer</span><span style="color: #000000">, { </span><span style="color: #001080">cookies</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@egomobile/http-server&quot;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">async</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">main</span><span style="color: #000000">() {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// ...</span>
+
+<span style="color: #000000">  </span><span style="color: #008000">// parses the content of &#039;Cookie&#039; HTTP header</span>
+<span style="color: #000000">  </span><span style="color: #008000">// and makes it available as key/value pairs</span>
+<span style="color: #000000">  </span><span style="color: #008000">// in &#039;cookies&#039; property of &#039;request&#039; object</span>
+<span style="color: #000000">  </span><span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #795E26">delete</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;/&quot;</span><span style="color: #000000">, [</span><span style="color: #795E26">cookies</span><span style="color: #000000">()], </span><span style="color: #0000FF">async</span><span style="color: #000000"> (</span><span style="color: #001080">request</span><span style="color: #000000">, </span><span style="color: #001080">response</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">response</span><span style="color: #000000">.</span><span style="color: #795E26">write</span><span style="color: #000000">(</span><span style="color: #A31515">&quot; FOO: &quot;</span><span style="color: #000000"> + </span><span style="color: #001080">request</span><span style="color: #000000">.</span><span style="color: #001080">cookies</span><span style="color: #000000">!.</span><span style="color: #001080">foo</span><span style="color: #000000">);</span>
+<span style="color: #000000">    </span><span style="color: #001080">response</span><span style="color: #000000">.</span><span style="color: #795E26">write</span><span style="color: #000000">(</span><span style="color: #A31515">&quot; BAZ: &quot;</span><span style="color: #000000"> + </span><span style="color: #001080">request</span><span style="color: #000000">.</span><span style="color: #001080">cookies</span><span style="color: #000000">!.</span><span style="color: #001080">baz</span><span style="color: #000000">);</span>
+<span style="color: #000000">  });</span>
+
+<span style="color: #000000">  </span><span style="color: #008000">// ...</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #795E26">main</span><span style="color: #000000">().</span><span style="color: #795E26">catch</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">error</span><span style="color: #000000">);</span>
+</code></pre>
+				<a href="#lang" id="lang" style="color: inherit; text-decoration: none;">
+					<h4>lang</h4>
+				</a>
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">createServer</span><span style="color: #000000">, { </span><span style="color: #001080">lang</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@egomobile/http-server&quot;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">async</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">main</span><span style="color: #000000">() {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// ...</span>
+
+<span style="color: #000000">  </span><span style="color: #008000">// parses the content of &#039;Accept-Language&#039; HTTP header</span>
+<span style="color: #000000">  </span><span style="color: #008000">// and makes the best matching, supported language available</span>
+<span style="color: #000000">  </span><span style="color: #008000">// in &#039;lang&#039; property of &#039;request&#039; object</span>
+<span style="color: #000000">  </span><span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;/docs&quot;</span><span style="color: #000000">, [</span><span style="color: #795E26">lang</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;de&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;en&quot;</span><span style="color: #000000">)], </span><span style="color: #0000FF">async</span><span style="color: #000000"> (</span><span style="color: #001080">request</span><span style="color: #000000">, </span><span style="color: #001080">response</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">response</span><span style="color: #000000">.</span><span style="color: #795E26">write</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;lang: &quot;</span><span style="color: #000000"> + </span><span style="color: #001080">request</span><span style="color: #000000">.</span><span style="color: #001080">lang</span><span style="color: #000000">);</span>
+<span style="color: #000000">  });</span>
+
+<span style="color: #000000">  </span><span style="color: #008000">// ...</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #795E26">main</span><span style="color: #000000">().</span><span style="color: #795E26">catch</span><span style="color: #000000">(</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #001080">error</span><span style="color: #000000">);</span>
+</code></pre>
 				<a href="#3rd-party-modules" id="3rd-party-modules" style="color: inherit; text-decoration: none;">
 					<h4>3rd party modules</h4>
 				</a>
@@ -340,7 +381,13 @@
 						<a href="modules/middlewares_buffer.html">middlewares/buffer</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="modules/middlewares_cookies.html">middlewares/cookies</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="modules/middlewares_json.html">middlewares/json</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/middlewares_lang.html">middlewares/lang</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/middlewares_query.html">middlewares/query</a>
@@ -385,6 +432,7 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>

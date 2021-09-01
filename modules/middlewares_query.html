@@ -90,7 +90,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/143d042/src/middlewares/query.ts#L41">src/middlewares/query.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/middlewares/query.ts#L40">src/middlewares/query.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -108,7 +108,7 @@
 
 <span style="color: #008000">// try to access via: /?foo=bar</span>
 <span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;/&#039;</span><span style="color: #000000">, [</span><span style="color: #795E26">query</span><span style="color: #000000">()], </span><span style="color: #0000FF">async</span><span style="color: #000000"> (</span><span style="color: #001080">request</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpRequest</span><span style="color: #000000">, </span><span style="color: #001080">response</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpResponse</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #001080">assert</span><span style="color: #000000">.</span><span style="color: #795E26">strictEqual</span><span style="color: #000000">(</span><span style="color: #0000FF">typeof</span><span style="color: #000000"> </span><span style="color: #001080">request</span><span style="color: #000000">.</span><span style="color: #001080">query</span><span style="color: #000000">!.</span><span style="color: #001080">foo</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;string&#039;</span><span style="color: #000000">)</span>
+<span style="color: #000000">  </span><span style="color: #001080">assert</span><span style="color: #000000">.</span><span style="color: #795E26">strictEqual</span><span style="color: #000000">(</span><span style="color: #0000FF">typeof</span><span style="color: #000000"> </span><span style="color: #001080">request</span><span style="color: #000000">.</span><span style="color: #001080">query</span><span style="color: #000000">!.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;foo&#039;</span><span style="color: #000000">), </span><span style="color: #A31515">&#039;string&#039;</span><span style="color: #000000">)</span>
 <span style="color: #000000">})</span>
 
 <span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #795E26">listen</span><span style="color: #000000">()</span>
@@ -151,7 +151,13 @@
 						<a href="middlewares_buffer.html">middlewares/buffer</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="middlewares_cookies.html">middlewares/cookies</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="middlewares_json.html">middlewares/json</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="middlewares_lang.html">middlewares/lang</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="middlewares_query.html">middlewares/query</a>
@@ -199,6 +205,7 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>

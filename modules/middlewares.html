@@ -76,7 +76,9 @@
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="middlewares.html#IJsonOptions" class="tsd-kind-icon">IJson<wbr>Options</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="middlewares.html#IValidateOptions" class="tsd-kind-icon">IValidate<wbr>Options</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="middlewares.html#buffer" class="tsd-kind-icon">buffer</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="middlewares.html#cookies" class="tsd-kind-icon">cookies</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="middlewares.html#json" class="tsd-kind-icon">json</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="middlewares.html#lang" class="tsd-kind-icon">lang</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="middlewares.html#query" class="tsd-kind-icon">query</a></li>
 								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="middlewares.html#validate" class="tsd-kind-icon">validate</a></li>
 							</ul>
@@ -121,9 +123,19 @@
 					Re-exports <a href="middlewares_buffer.html#buffer">buffer</a>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="cookies" class="tsd-anchor"></a>
+					<h3>cookies</h3>
+					Re-exports <a href="middlewares_cookies.html#cookies">cookies</a>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
 					<a name="json" class="tsd-anchor"></a>
 					<h3>json</h3>
 					Re-exports <a href="middlewares_json.html#json">json</a>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="lang" class="tsd-anchor"></a>
+					<h3>lang</h3>
+					Re-exports <a href="middlewares_lang.html#lang">lang</a>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
 					<a name="query" class="tsd-anchor"></a>
@@ -144,7 +156,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Body<wbr>Limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">134217728</span><span class="tsd-signature-symbol"> = 134217728</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/143d042/src/middlewares/index.ts#L21">src/middlewares/index.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/middlewares/index.ts#L21">src/middlewares/index.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -160,13 +172,13 @@
 					<a name="defaultLimitReachedHandler" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> default<wbr>Limit<wbr>Reached<wbr>Handler</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">default<wbr>Limit<wbr>Reached<wbr>Handler<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a>, response<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">default<wbr>Limit<wbr>Reached<wbr>Handler<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, response<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/143d042/src/middlewares/index.ts#L29">src/middlewares/index.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/middlewares/index.ts#L29">src/middlewares/index.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -177,7 +189,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>request: <a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a></h5>
+									<h5>request: <a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The request context.</p>
 									</div>
@@ -197,13 +209,13 @@
 					<a name="defaultParseErrorHandler" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> default<wbr>Parse<wbr>Error<wbr>Handler</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">default<wbr>Parse<wbr>Error<wbr>Handler<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><a href="../classes/errors_parse.ParseError.html" class="tsd-signature-type" data-tsd-kind="Class">ParseError</a>, request<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a>, response<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">default<wbr>Parse<wbr>Error<wbr>Handler<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><a href="../classes/errors_parse.ParseError.html" class="tsd-signature-type" data-tsd-kind="Class">ParseError</a>, request<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, response<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/143d042/src/middlewares/index.ts#L46">src/middlewares/index.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/middlewares/index.ts#L46">src/middlewares/index.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -220,7 +232,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>request: <a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a></h5>
+									<h5>request: <a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The request context.</p>
 									</div>
@@ -240,13 +252,13 @@
 					<a name="defaultValidationFailedHandler" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> default<wbr>Validation<wbr>Failed<wbr>Handler</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">default<wbr>Validation<wbr>Failed<wbr>Handler<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidationError</span>, request<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a>, response<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">default<wbr>Validation<wbr>Failed<wbr>Handler<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidationError</span>, request<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, response<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.IHttpResponse.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/143d042/src/middlewares/index.ts#L63">src/middlewares/index.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/middlewares/index.ts#L63">src/middlewares/index.ts:63</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -263,7 +275,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>request: <a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a></h5>
+									<h5>request: <a href="../interfaces/types.IHttpRequest.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpRequest</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The request context.</p>
 									</div>
@@ -309,7 +321,13 @@
 						<a href="middlewares_buffer.html">middlewares/buffer</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="middlewares_cookies.html">middlewares/cookies</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="middlewares_json.html">middlewares/json</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="middlewares_lang.html">middlewares/lang</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="middlewares_query.html">middlewares/query</a>
@@ -349,7 +367,13 @@
 						<a href="middlewares.html#buffer" class="tsd-kind-icon">buffer</a>
 					</li>
 					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="middlewares.html#cookies" class="tsd-kind-icon">cookies</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
 						<a href="middlewares.html#json" class="tsd-kind-icon">json</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="middlewares.html#lang" class="tsd-kind-icon">lang</a>
 					</li>
 					<li class=" tsd-kind-reference tsd-parent-kind-module">
 						<a href="middlewares.html#query" class="tsd-kind-icon">query</a>
@@ -387,6 +411,7 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>

@@ -98,7 +98,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/143d042/src/middlewares/buffer.ts#L76">src/middlewares/buffer.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/middlewares/buffer.ts#L76">src/middlewares/buffer.ts:76</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -115,13 +115,13 @@
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">app</span><span style="color: #000000"> = </span><span style="color: #795E26">createServer</span><span style="color: #000000">()</span>
 
 <span style="color: #0000FF">async</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">handleLimitReached</span><span style="color: #000000">(</span><span style="color: #001080">request</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpRequest</span><span style="color: #000000">, </span><span style="color: #001080">response</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpResponse</span><span style="color: #000000">) {</span>
-<span style="color: #000000">    </span><span style="color: #001080">request</span><span style="color: #000000">.</span><span style="color: #795E26">writeHead</span><span style="color: #000000">(</span><span style="color: #098658">400</span><span style="color: #000000">)</span>
-<span style="color: #000000">    </span><span style="color: #001080">request</span><span style="color: #000000">.</span><span style="color: #795E26">write</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Input is too big&#039;</span><span style="color: #000000">)</span>
+<span style="color: #000000">  </span><span style="color: #001080">request</span><span style="color: #000000">.</span><span style="color: #795E26">writeHead</span><span style="color: #000000">(</span><span style="color: #098658">400</span><span style="color: #000000">)</span>
+<span style="color: #000000">  </span><span style="color: #001080">request</span><span style="color: #000000">.</span><span style="color: #795E26">write</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Input is too big&#039;</span><span style="color: #000000">)</span>
 <span style="color: #000000">}</span>
 
 <span style="color: #008000">// maximum input size: 128 MB</span>
 <span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #795E26">post</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;/&#039;</span><span style="color: #000000">, </span><span style="color: #795E26">buffer</span><span style="color: #000000">(), </span><span style="color: #0000FF">async</span><span style="color: #000000"> (</span><span style="color: #001080">request</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpRequest</span><span style="color: #000000">, </span><span style="color: #001080">response</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpResponse</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #001080">assert</span><span style="color: #000000">.</span><span style="color: #795E26">strictEqual</span><span style="color: #000000">(</span><span style="color: #001080">Buffer</span><span style="color: #000000">.</span><span style="color: #795E26">isBuffer</span><span style="color: #000000">(</span><span style="color: #001080">request</span><span style="color: #000000">.</span><span style="color: #001080">body</span><span style="color: #000000">), </span><span style="color: #0000FF">true</span><span style="color: #000000">)</span>
+<span style="color: #000000">  </span><span style="color: #001080">assert</span><span style="color: #000000">.</span><span style="color: #795E26">strictEqual</span><span style="color: #000000">(</span><span style="color: #001080">Buffer</span><span style="color: #000000">.</span><span style="color: #795E26">isBuffer</span><span style="color: #000000">(</span><span style="color: #001080">request</span><span style="color: #000000">.</span><span style="color: #001080">body</span><span style="color: #000000">), </span><span style="color: #0000FF">true</span><span style="color: #000000">)</span>
 <span style="color: #000000">})</span>
 
 <span style="color: #008000">// maximum input size: 256 MB</span>
@@ -131,14 +131,14 @@
 
 <span style="color: #008000">// maximum input size: 384 MB</span>
 <span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #795E26">patch</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;/&#039;</span><span style="color: #000000">, </span><span style="color: #795E26">buffer</span><span style="color: #000000">({ </span><span style="color: #001080">limit:</span><span style="color: #000000"> </span><span style="color: #098658">402653184</span><span style="color: #000000"> }), </span><span style="color: #0000FF">async</span><span style="color: #000000"> (</span><span style="color: #001080">request</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpRequest</span><span style="color: #000000">, </span><span style="color: #001080">response</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpResponse</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #001080">assert</span><span style="color: #000000">.</span><span style="color: #795E26">strictEqual</span><span style="color: #000000">(</span><span style="color: #001080">Buffer</span><span style="color: #000000">.</span><span style="color: #795E26">isBuffer</span><span style="color: #000000">(</span><span style="color: #001080">request</span><span style="color: #000000">.</span><span style="color: #001080">body</span><span style="color: #000000">), </span><span style="color: #0000FF">true</span><span style="color: #000000">)</span>
+<span style="color: #000000">  </span><span style="color: #001080">assert</span><span style="color: #000000">.</span><span style="color: #795E26">strictEqual</span><span style="color: #000000">(</span><span style="color: #001080">Buffer</span><span style="color: #000000">.</span><span style="color: #795E26">isBuffer</span><span style="color: #000000">(</span><span style="color: #001080">request</span><span style="color: #000000">.</span><span style="color: #001080">body</span><span style="color: #000000">), </span><span style="color: #0000FF">true</span><span style="color: #000000">)</span>
 <span style="color: #000000">})</span>
 
 <span style="color: #008000">// custom error handler</span>
 <span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #795E26">delete</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;/&#039;</span><span style="color: #000000">, </span><span style="color: #795E26">buffer</span><span style="color: #000000">({ </span><span style="color: #001080">limit:</span><span style="color: #000000"> </span><span style="color: #098658">1048576</span><span style="color: #000000">, </span><span style="color: #001080">onLimitReached:</span><span style="color: #000000"> </span><span style="color: #001080">handleLimitReached</span><span style="color: #000000"> }), </span><span style="color: #0000FF">async</span><span style="color: #000000"> (</span><span style="color: #001080">request</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpRequest</span><span style="color: #000000">, </span><span style="color: #001080">response</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpResponse</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #008000">// alternative:</span>
 <span style="color: #008000">// app.delete(&#039;/&#039;, buffer(1, handleLimitReached), async (request: IHttpRequest, response: IHttpResponse) =&gt; {</span>
-<span style="color: #000000">    </span><span style="color: #001080">assert</span><span style="color: #000000">.</span><span style="color: #795E26">strictEqual</span><span style="color: #000000">(</span><span style="color: #001080">Buffer</span><span style="color: #000000">.</span><span style="color: #795E26">isBuffer</span><span style="color: #000000">(</span><span style="color: #001080">request</span><span style="color: #000000">.</span><span style="color: #001080">body</span><span style="color: #000000">), </span><span style="color: #0000FF">true</span><span style="color: #000000">)</span>
+<span style="color: #000000">  </span><span style="color: #001080">assert</span><span style="color: #000000">.</span><span style="color: #795E26">strictEqual</span><span style="color: #000000">(</span><span style="color: #001080">Buffer</span><span style="color: #000000">.</span><span style="color: #795E26">isBuffer</span><span style="color: #000000">(</span><span style="color: #001080">request</span><span style="color: #000000">.</span><span style="color: #001080">body</span><span style="color: #000000">), </span><span style="color: #0000FF">true</span><span style="color: #000000">)</span>
 <span style="color: #000000">})</span>
 </code></pre>
 									</dd>
@@ -150,7 +150,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/143d042/src/middlewares/buffer.ts#L77">src/middlewares/buffer.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/middlewares/buffer.ts#L77">src/middlewares/buffer.ts:77</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -167,7 +167,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/143d042/src/middlewares/buffer.ts#L78">src/middlewares/buffer.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/de57a5d/src/middlewares/buffer.ts#L78">src/middlewares/buffer.ts:78</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -210,7 +210,13 @@
 						<a href="middlewares_buffer.html">middlewares/buffer</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="middlewares_cookies.html">middlewares/cookies</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="middlewares_json.html">middlewares/json</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="middlewares_lang.html">middlewares/lang</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="middlewares_query.html">middlewares/query</a>
@@ -261,6 +267,7 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
