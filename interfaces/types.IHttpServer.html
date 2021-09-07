@@ -92,7 +92,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L164">src/types/index.ts:164</a></li>
+								<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L374">src/types/index.ts:374</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -136,6 +136,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.IHttpServer.html#errorHandler" class="tsd-kind-icon">error<wbr>Handler</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.IHttpServer.html#isEgoHttpServer" class="tsd-kind-icon">is<wbr>Ego<wbr>Http<wbr>Server</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.IHttpServer.html#port" class="tsd-kind-icon">port</a></li>
 							</ul>
@@ -145,6 +146,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="types.IHttpServer.html#close" class="tsd-kind-icon">close</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="types.IHttpServer.html#connect" class="tsd-kind-icon">connect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="types.IHttpServer.html#controllers" class="tsd-kind-icon">controllers</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="types.IHttpServer.html#delete" class="tsd-kind-icon">delete</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="types.IHttpServer.html#get" class="tsd-kind-icon">get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="types.IHttpServer.html#head" class="tsd-kind-icon">head</a></li>
@@ -165,12 +167,27 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="errorHandler" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> error<wbr>Handler</h3>
+					<div class="tsd-signature tsd-kind-icon">error<wbr>Handler<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#HttpErrorHandler" class="tsd-signature-type" data-tsd-kind="Type alias">HttpErrorHandler</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L471">src/types/index.ts:471</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the current error handler.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="isEgoHttpServer" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> is<wbr>Ego<wbr>Http<wbr>Server</h3>
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Ego<wbr>Http<wbr>Server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L290">src/types/index.ts:290</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L532">src/types/index.ts:532</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -193,10 +210,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="port" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> port</h3>
-					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#Optional" class="tsd-signature-type" data-tsd-kind="Type alias">Optional</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L361">src/types/index.ts:361</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L603">src/types/index.ts:603</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -218,7 +235,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L183">src/types/index.ts:183</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L393">src/types/index.ts:393</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -256,7 +273,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L205">src/types/index.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L415">src/types/index.ts:415</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -298,7 +315,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L206">src/types/index.ts:206</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L416">src/types/index.ts:416</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -318,6 +335,76 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="controllers" class="tsd-anchor"></a>
+					<h3>controllers</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">controllers<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.IHttpServer.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpServer</a></li>
+						<li class="tsd-signature tsd-kind-icon">controllers<span class="tsd-signature-symbol">(</span>rootDir<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#Nilable" class="tsd-signature-type" data-tsd-kind="Type alias">Nilable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.IHttpServer.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpServer</a></li>
+						<li class="tsd-signature tsd-kind-icon">controllers<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#Nilable" class="tsd-signature-type" data-tsd-kind="Type alias">Nilable</a><span class="tsd-signature-symbol">&lt;</span><a href="types.IControllersOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">IControllersOptions</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.IHttpServer.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpServer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L441">src/types/index.ts:441</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Loads an initializes the controllers from and inside a root directory.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">createServer</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egomobile/http-server&#039;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">app</span><span style="color: #000000"> = </span><span style="color: #795E26">createServer</span><span style="color: #000000">()</span>
+
+<span style="color: #008000">// scans the subdirectory &#039;controllers&#039; of the current process&#039;</span>
+<span style="color: #008000">// working directory for JavaScript and/or TypeScript files,</span>
+<span style="color: #008000">// which do not start with _ and have a class as default export,</span>
+<span style="color: #008000">// that is marked with @Controller decorator</span>
+<span style="color: #008000">// and creates instances from that classes, which will be autmatically</span>
+<span style="color: #008000">// mapped as handlers for &#039;app&#039; instance</span>
+<span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #795E26">controllers</span><span style="color: #000000">()</span>
+
+<span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #795E26">listen</span><span style="color: #000000">()</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="types.IHttpServer.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpServer</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L442">src/types/index.ts:442</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rootDir: <a href="../modules/types.html#Nilable" class="tsd-signature-type" data-tsd-kind="Type alias">Nilable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="types.IHttpServer.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpServer</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L443">src/types/index.ts:443</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="../modules/types.html#Nilable" class="tsd-signature-type" data-tsd-kind="Type alias">Nilable</a><span class="tsd-signature-symbol">&lt;</span><a href="types.IControllersOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">IControllersOptions</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="types.IHttpServer.html" class="tsd-signature-type" data-tsd-kind="Interface">IHttpServer</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="delete" class="tsd-anchor"></a>
 					<h3>delete</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -328,7 +415,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L228">src/types/index.ts:228</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L465">src/types/index.ts:465</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -370,7 +457,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L229">src/types/index.ts:229</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L466">src/types/index.ts:466</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -400,7 +487,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L251">src/types/index.ts:251</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L493">src/types/index.ts:493</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -442,7 +529,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L252">src/types/index.ts:252</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L494">src/types/index.ts:494</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -472,7 +559,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L274">src/types/index.ts:274</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L516">src/types/index.ts:516</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -514,7 +601,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L275">src/types/index.ts:275</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L517">src/types/index.ts:517</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -543,7 +630,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L310">src/types/index.ts:310</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L552">src/types/index.ts:552</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -585,7 +672,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L332">src/types/index.ts:332</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L574">src/types/index.ts:574</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -627,7 +714,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L333">src/types/index.ts:333</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L575">src/types/index.ts:575</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -657,7 +744,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L355">src/types/index.ts:355</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L597">src/types/index.ts:597</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -699,7 +786,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L356">src/types/index.ts:356</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L598">src/types/index.ts:598</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -729,7 +816,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L383">src/types/index.ts:383</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L625">src/types/index.ts:625</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -771,7 +858,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L384">src/types/index.ts:384</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L626">src/types/index.ts:626</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -801,7 +888,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L406">src/types/index.ts:406</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L648">src/types/index.ts:648</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -843,7 +930,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L407">src/types/index.ts:407</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L649">src/types/index.ts:649</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -872,7 +959,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L442">src/types/index.ts:442</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L684">src/types/index.ts:684</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -930,7 +1017,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L475">src/types/index.ts:475</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L717">src/types/index.ts:717</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -987,7 +1074,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L497">src/types/index.ts:497</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L739">src/types/index.ts:739</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1029,7 +1116,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L498">src/types/index.ts:498</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L740">src/types/index.ts:740</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1058,7 +1145,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/index.ts#L530">src/types/index.ts:530</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/index.ts#L772">src/types/index.ts:772</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1108,66 +1195,39 @@
 					<li class=" ">
 						<a href="../modules.html">Modules</a>
 					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/__tests___utils.html">__tests__/utils</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/errors.html">errors</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/errors_entityTooLarge.html">errors/entity<wbr>Too<wbr>Large</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/errors_parse.html">errors/parse</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/errors_prettyErrors.html">errors/pretty<wbr>Errors</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/index.html">index</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/middlewares.html">middlewares</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/middlewares_buffer.html">middlewares/buffer</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/middlewares_cookies.html">middlewares/cookies</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/middlewares_json.html">middlewares/json</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/middlewares_lang.html">middlewares/lang</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/middlewares_query.html">middlewares/query</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/middlewares_validate.html">middlewares/validate</a>
-					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/types.html">types</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/types_internal.html">types/internal</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/utils.html">utils</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/validators.html">validators</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/validators_params.html">validators/params</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/types.HttpInputDataFormat.html" class="tsd-kind-icon">Http<wbr>Input<wbr>Data<wbr>Format</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="types.IControllerRouteOptions.html" class="tsd-kind-icon">IController<wbr>Route<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="types.IControllerRouteWithBodyOptions.html" class="tsd-kind-icon">IController<wbr>Route<wbr>With<wbr>Body<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="types.IControllersOptions.html" class="tsd-kind-icon">IControllers<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="types.IControllersSwaggerOptions.html" class="tsd-kind-icon">IControllers<wbr>Swagger<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="types.IDocumentationUpdaterContext.html" class="tsd-kind-icon">IDocumentation<wbr>Updater<wbr>Context</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="types.IHttpBodyParserOptions.html" class="tsd-kind-icon">IHttp<wbr>Body<wbr>Parser<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="types.IHttpController.html" class="tsd-kind-icon">IHttp<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="types.IHttpControllerOptions.html" class="tsd-kind-icon">IHttp<wbr>Controller<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="types.IHttpRequest.html" class="tsd-kind-icon">IHttp<wbr>Request</a>
@@ -1184,6 +1244,9 @@
 						<a href="types.IHttpServer.html" class="tsd-kind-icon">IHttp<wbr>Server</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="types.IHttpServer.html#errorHandler" class="tsd-kind-icon">error<wbr>Handler</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="types.IHttpServer.html#isEgoHttpServer" class="tsd-kind-icon">is<wbr>Ego<wbr>Http<wbr>Server</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -1194,6 +1257,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="types.IHttpServer.html#connect" class="tsd-kind-icon">connect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="types.IHttpServer.html#controllers" class="tsd-kind-icon">controllers</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="types.IHttpServer.html#delete" class="tsd-kind-icon">delete</a>
@@ -1235,11 +1301,41 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/types.html#Constructor" class="tsd-kind-icon">Constructor</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/types.html#ControllerRouteArgument1" class="tsd-kind-icon">Controller<wbr>Route<wbr>Argument1</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/types.html#ControllerRouteArgument2" class="tsd-kind-icon">Controller<wbr>Route<wbr>Argument2</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/types.html#ControllerRouteArgument3" class="tsd-kind-icon">Controller<wbr>Route<wbr>Argument3</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/types.html#ControllerRoutePath" class="tsd-kind-icon">Controller<wbr>Route<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/types.html#ControllersSwaggerBaseDocument" class="tsd-kind-icon">Controllers<wbr>Swagger<wbr>Base<wbr>Document</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/types.html#ControllersSwaggerOptionsValue" class="tsd-kind-icon">Controllers<wbr>Swagger<wbr>Options<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/types.html#DocumentationUpdater" class="tsd-kind-icon">Documentation<wbr>Updater</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/types.html#GetStatusCodeFromError" class="tsd-kind-icon">Get<wbr>Status<wbr>Code<wbr>From<wbr>Error</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/types.html#GetterFunc" class="tsd-kind-icon">Getter<wbr>Func</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/types.html#HttpErrorHandler" class="tsd-kind-icon">Http<wbr>Error<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/types.html#HttpMethod" class="tsd-kind-icon">Http<wbr>Method</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/types.html#HttpMiddleware" class="tsd-kind-icon">Http<wbr>Middleware</a>
@@ -1274,6 +1370,9 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/types.html#ParseErrorHandler" class="tsd-kind-icon">Parse<wbr>Error<wbr>Handler</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/types.html#ResponseSerializer" class="tsd-kind-icon">Response<wbr>Serializer</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/types.html#ValidationFailedHandler" class="tsd-kind-icon">Validation<wbr>Failed<wbr>Handler</a>
 					</li>
@@ -1301,6 +1400,10 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 		</div>
 	</div>

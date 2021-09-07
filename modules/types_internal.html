@@ -72,6 +72,16 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/types_internal.IControllerClass.html" class="tsd-kind-icon">IController<wbr>Class</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/types_internal.IControllerContext.html" class="tsd-kind-icon">IController<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/types_internal.IControllerFile.html" class="tsd-kind-icon">IController<wbr>File</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/types_internal.IControllerInfo.html" class="tsd-kind-icon">IController<wbr>Info</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/types_internal.IInitControllerErrorHandlerActionContext.html" class="tsd-kind-icon">IInit<wbr>Controller<wbr>Error<wbr>Handler<wbr>Action<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/types_internal.IInitControllerMethodActionContext.html" class="tsd-kind-icon">IInit<wbr>Controller<wbr>Method<wbr>Action<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/types_internal.IInitControllerMethodSwaggerActionContext.html" class="tsd-kind-icon">IInit<wbr>Controller<wbr>Method<wbr>Swagger<wbr>Action<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/types_internal.IInitControllerSerializerActionContext.html" class="tsd-kind-icon">IInit<wbr>Controller<wbr>Serializer<wbr>Action<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/types_internal.IInitDocumentationUpdaterContext.html" class="tsd-kind-icon">IInit<wbr>Documentation<wbr>Updater<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/types_internal.ISwaggerMethodInfo.html" class="tsd-kind-icon">ISwagger<wbr>Method<wbr>Info</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/types_internal.RequestHandlerContext.html" class="tsd-kind-icon">Request<wbr>Handler<wbr>Context</a></li>
 							</ul>
 						</section>
@@ -79,6 +89,11 @@
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="types_internal.html#GroupedHttpRequestHandlers" class="tsd-kind-icon">Grouped<wbr>Http<wbr>Request<wbr>Handlers</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="types_internal.html#InitControllerErrorHandlerAction" class="tsd-kind-icon">Init<wbr>Controller<wbr>Error<wbr>Handler<wbr>Action</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="types_internal.html#InitControllerMethodAction" class="tsd-kind-icon">Init<wbr>Controller<wbr>Method<wbr>Action</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="types_internal.html#InitControllerMethodSwaggerAction" class="tsd-kind-icon">Init<wbr>Controller<wbr>Method<wbr>Swagger<wbr>Action</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="types_internal.html#InitControllerSerializerAction" class="tsd-kind-icon">Init<wbr>Controller<wbr>Serializer<wbr>Action</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="types_internal.html#InitDocumentationUpdaterAction" class="tsd-kind-icon">Init<wbr>Documentation<wbr>Updater<wbr>Action</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,7 +107,7 @@
 					<div class="tsd-signature tsd-kind-icon">Grouped<wbr>Http<wbr>Request<wbr>Handlers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/c8517ed/src/types/internal.ts#L4">src/types/internal.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/internal.ts#L5">src/types/internal.ts:5</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -100,6 +115,161 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-index-signature">
 								<h5><span class="tsd-signature-symbol">[</span>method: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="../interfaces/types_internal.RequestHandlerContext.html" class="tsd-signature-type" data-tsd-kind="Interface">RequestHandlerContext</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="InitControllerErrorHandlerAction" class="tsd-anchor"></a>
+					<h3>Init<wbr>Controller<wbr>Error<wbr>Handler<wbr>Action</h3>
+					<div class="tsd-signature tsd-kind-icon">Init<wbr>Controller<wbr>Error<wbr>Handler<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/types_internal.IInitControllerErrorHandlerActionContext.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitControllerErrorHandlerActionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/internal.ts#L57">src/types/internal.ts:57</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/types_internal.IInitControllerErrorHandlerActionContext.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitControllerErrorHandlerActionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>context: <a href="../interfaces/types_internal.IInitControllerErrorHandlerActionContext.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitControllerErrorHandlerActionContext</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="InitControllerMethodAction" class="tsd-anchor"></a>
+					<h3>Init<wbr>Controller<wbr>Method<wbr>Action</h3>
+					<div class="tsd-signature tsd-kind-icon">Init<wbr>Controller<wbr>Method<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/types_internal.IInitControllerMethodActionContext.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitControllerMethodActionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/internal.ts#L55">src/types/internal.ts:55</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/types_internal.IInitControllerMethodActionContext.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitControllerMethodActionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>context: <a href="../interfaces/types_internal.IInitControllerMethodActionContext.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitControllerMethodActionContext</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="InitControllerMethodSwaggerAction" class="tsd-anchor"></a>
+					<h3>Init<wbr>Controller<wbr>Method<wbr>Swagger<wbr>Action</h3>
+					<div class="tsd-signature tsd-kind-icon">Init<wbr>Controller<wbr>Method<wbr>Swagger<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/types_internal.IInitControllerMethodSwaggerActionContext.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitControllerMethodSwaggerActionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/internal.ts#L61">src/types/internal.ts:61</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/types_internal.IInitControllerMethodSwaggerActionContext.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitControllerMethodSwaggerActionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>context: <a href="../interfaces/types_internal.IInitControllerMethodSwaggerActionContext.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitControllerMethodSwaggerActionContext</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="InitControllerSerializerAction" class="tsd-anchor"></a>
+					<h3>Init<wbr>Controller<wbr>Serializer<wbr>Action</h3>
+					<div class="tsd-signature tsd-kind-icon">Init<wbr>Controller<wbr>Serializer<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/types_internal.IInitControllerSerializerActionContext.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitControllerSerializerActionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/internal.ts#L59">src/types/internal.ts:59</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/types_internal.IInitControllerSerializerActionContext.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitControllerSerializerActionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>context: <a href="../interfaces/types_internal.IInitControllerSerializerActionContext.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitControllerSerializerActionContext</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="InitDocumentationUpdaterAction" class="tsd-anchor"></a>
+					<h3>Init<wbr>Documentation<wbr>Updater<wbr>Action</h3>
+					<div class="tsd-signature tsd-kind-icon">Init<wbr>Documentation<wbr>Updater<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/types_internal.IInitDocumentationUpdaterContext.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitDocumentationUpdaterContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/0881c17/src/types/internal.ts#L63">src/types/internal.ts:63</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/types_internal.IInitDocumentationUpdaterContext.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitDocumentationUpdaterContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>context: <a href="../interfaces/types_internal.IInitDocumentationUpdaterContext.html" class="tsd-signature-type" data-tsd-kind="Interface">IInitDocumentationUpdaterContext</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</div>
@@ -112,69 +282,63 @@
 					<li class=" ">
 						<a href="../modules.html">Modules</a>
 					</li>
-					<li class=" tsd-kind-module">
-						<a href="__tests___utils.html">__tests__/utils</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="errors.html">errors</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="errors_entityTooLarge.html">errors/entity<wbr>Too<wbr>Large</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="errors_parse.html">errors/parse</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="errors_prettyErrors.html">errors/pretty<wbr>Errors</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="index.html">index</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="middlewares.html">middlewares</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="middlewares_buffer.html">middlewares/buffer</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="middlewares_cookies.html">middlewares/cookies</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="middlewares_json.html">middlewares/json</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="middlewares_lang.html">middlewares/lang</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="middlewares_query.html">middlewares/query</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="middlewares_validate.html">middlewares/validate</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="types.html">types</a>
-					</li>
 					<li class="current tsd-kind-module">
 						<a href="types_internal.html">types/internal</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="utils.html">utils</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="validators.html">validators</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="validators_params.html">validators/params</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/types_internal.IControllerClass.html" class="tsd-kind-icon">IController<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/types_internal.IControllerContext.html" class="tsd-kind-icon">IController<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/types_internal.IControllerFile.html" class="tsd-kind-icon">IController<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/types_internal.IControllerInfo.html" class="tsd-kind-icon">IController<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/types_internal.IInitControllerErrorHandlerActionContext.html" class="tsd-kind-icon">IInit<wbr>Controller<wbr>Error<wbr>Handler<wbr>Action<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/types_internal.IInitControllerMethodActionContext.html" class="tsd-kind-icon">IInit<wbr>Controller<wbr>Method<wbr>Action<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/types_internal.IInitControllerMethodSwaggerActionContext.html" class="tsd-kind-icon">IInit<wbr>Controller<wbr>Method<wbr>Swagger<wbr>Action<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/types_internal.IInitControllerSerializerActionContext.html" class="tsd-kind-icon">IInit<wbr>Controller<wbr>Serializer<wbr>Action<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/types_internal.IInitDocumentationUpdaterContext.html" class="tsd-kind-icon">IInit<wbr>Documentation<wbr>Updater<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/types_internal.ISwaggerMethodInfo.html" class="tsd-kind-icon">ISwagger<wbr>Method<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/types_internal.RequestHandlerContext.html" class="tsd-kind-icon">Request<wbr>Handler<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="types_internal.html#GroupedHttpRequestHandlers" class="tsd-kind-icon">Grouped<wbr>Http<wbr>Request<wbr>Handlers</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="types_internal.html#InitControllerErrorHandlerAction" class="tsd-kind-icon">Init<wbr>Controller<wbr>Error<wbr>Handler<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="types_internal.html#InitControllerMethodAction" class="tsd-kind-icon">Init<wbr>Controller<wbr>Method<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="types_internal.html#InitControllerMethodSwaggerAction" class="tsd-kind-icon">Init<wbr>Controller<wbr>Method<wbr>Swagger<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="types_internal.html#InitControllerSerializerAction" class="tsd-kind-icon">Init<wbr>Controller<wbr>Serializer<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="types_internal.html#InitDocumentationUpdaterAction" class="tsd-kind-icon">Init<wbr>Documentation<wbr>Updater<wbr>Action</a>
 					</li>
 				</ul>
 			</nav>
@@ -198,6 +362,10 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 		</div>
 	</div>
