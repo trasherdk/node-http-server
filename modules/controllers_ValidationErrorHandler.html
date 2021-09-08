@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>controllers/ErrorHandler | @egomobile/http-server</title>
+	<title>controllers/ValidationErrorHandler | @egomobile/http-server</title>
 	<meta name="description" content="Documentation for @egomobile/http-server">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@egomobile/http-server</a>
 				</li>
 				<li>
-					<a href="controllers_ErrorHandler.html">controllers/ErrorHandler</a>
+					<a href="controllers_ValidationErrorHandler.html">controllers/ValidationErrorHandler</a>
 				</li>
 			</ul>
-			<h1>Module controllers/ErrorHandler</h1>
+			<h1>Module controllers/ValidationErrorHandler</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="controllers_ErrorHandler.html#ErrorHandler" class="tsd-kind-icon">Error<wbr>Handler</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="controllers_ValidationErrorHandler.html#ValidationErrorHandler" class="tsd-kind-icon">Validation<wbr>Error<wbr>Handler</a></li>
 							</ul>
 						</section>
 					</div>
@@ -81,16 +81,16 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="ErrorHandler" class="tsd-anchor"></a>
-					<h3>Error<wbr>Handler</h3>
+					<a name="ValidationErrorHandler" class="tsd-anchor"></a>
+					<h3>Validation<wbr>Error<wbr>Handler</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">Error<wbr>Handler<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MethodDecorator</span></li>
+						<li class="tsd-signature tsd-kind-icon">Validation<wbr>Error<wbr>Handler<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MethodDecorator</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/8d24535/src/controllers/ErrorHandler.ts#L54">src/controllers/ErrorHandler.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/egomobile/node-http-server/blob/8d24535/src/controllers/ValidationErrorHandler.ts#L57">src/controllers/ValidationErrorHandler.ts:57</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -99,26 +99,29 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">Controller</span><span style="color: #000000">, </span><span style="color: #001080">ControllerBase</span><span style="color: #000000">, </span><span style="color: #001080">ErrorHandler</span><span style="color: #000000">, </span><span style="color: #001080">GET</span><span style="color: #000000">, </span><span style="color: #001080">IHttpRequest</span><span style="color: #000000">, </span><span style="color: #001080">IHttpResponse</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egomobile/http-server&#039;</span>
+									<dd><pre><code><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">Controller</span><span style="color: #000000">, </span><span style="color: #001080">ControllerBase</span><span style="color: #000000">, </span><span style="color: #001080">GET</span><span style="color: #000000">, </span><span style="color: #001080">IHttpRequest</span><span style="color: #000000">, </span><span style="color: #001080">IHttpResponse</span><span style="color: #000000">, </span><span style="color: #001080">JoiValidationError</span><span style="color: #000000">, </span><span style="color: #001080">schema</span><span style="color: #000000">, </span><span style="color: #001080">ValidationErrorHandler</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@egomobile/http-server&#039;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">mySchema</span><span style="color: #000000"> = </span><span style="color: #001080">schema</span><span style="color: #000000">.</span><span style="color: #795E26">object</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">email:</span><span style="color: #000000"> </span><span style="color: #001080">schema</span><span style="color: #000000">.</span><span style="color: #795E26">string</span><span style="color: #000000">().</span><span style="color: #795E26">trim</span><span style="color: #000000">().</span><span style="color: #795E26">email</span><span style="color: #000000">().</span><span style="color: #795E26">required</span><span style="color: #000000">(),</span>
+<span style="color: #000000">  </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #001080">schema</span><span style="color: #000000">.</span><span style="color: #795E26">string</span><span style="color: #000000">().</span><span style="color: #795E26">trim</span><span style="color: #000000">().</span><span style="color: #795E26">min</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">).</span><span style="color: #795E26">optional</span><span style="color: #000000">()</span>
+<span style="color: #000000">})</span>
 
 <span style="color: #000000">@</span><span style="color: #795E26">Controller</span><span style="color: #000000">()</span>
 <span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #AF00DB">default</span><span style="color: #000000"> </span><span style="color: #0000FF">class</span><span style="color: #000000"> </span><span style="color: #267F99">MyController</span><span style="color: #000000"> </span><span style="color: #0000FF">extends</span><span style="color: #000000"> </span><span style="color: #267F99">ControllerBase</span><span style="color: #000000"> {</span>
-<span style="color: #000000">  @</span><span style="color: #795E26">GET</span><span style="color: #000000">()</span>
+<span style="color: #000000">  @</span><span style="color: #795E26">POST</span><span style="color: #000000">(</span><span style="color: #001080">mySchema</span><span style="color: #000000">)</span>
 <span style="color: #000000">  </span><span style="color: #0000FF">async</span><span style="color: #000000"> </span><span style="color: #795E26">index</span><span style="color: #000000">(</span><span style="color: #001080">request</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpRequest</span><span style="color: #000000">, </span><span style="color: #001080">response</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpResponse</span><span style="color: #000000">) {</span>
-<span style="color: #000000">    </span><span style="color: #AF00DB">throw</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Error</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Something went wrong!&#039;</span><span style="color: #000000">)</span>
+<span style="color: #000000">    </span><span style="color: #001080">response</span><span style="color: #000000">.</span><span style="color: #795E26">write</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;You send: &#039;</span><span style="color: #000000"> + </span><span style="color: #267F99">JSON</span><span style="color: #000000">.</span><span style="color: #795E26">stringify</span><span style="color: #000000">(</span><span style="color: #001080">response</span><span style="color: #000000">.</span><span style="color: #001080">body</span><span style="color: #000000">!))</span>
 <span style="color: #000000">  }</span>
 
-<span style="color: #000000">  @</span><span style="color: #795E26">ErrorHandler</span><span style="color: #000000">()  </span><span style="color: #008000">// mark that method as default error handler</span>
-<span style="color: #000000">                   </span><span style="color: #008000">// inside that controller</span>
-<span style="color: #000000">  </span><span style="color: #0000FF">async</span><span style="color: #000000"> </span><span style="color: #795E26">handleError</span><span style="color: #000000">(</span><span style="color: #001080">error</span><span style="color: #000000">: </span><span style="color: #267F99">any</span><span style="color: #000000">, </span><span style="color: #001080">request</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpRequest</span><span style="color: #000000">, </span><span style="color: #001080">response</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpResponse</span><span style="color: #000000">) {</span>
-<span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">errorMessage</span><span style="color: #000000"> = </span><span style="color: #001080">Buffer</span><span style="color: #000000">.</span><span style="color: #795E26">from</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;ERROR: &#039;</span><span style="color: #000000"> + </span><span style="color: #267F99">String</span><span style="color: #000000">(</span><span style="color: #001080">error</span><span style="color: #000000">), </span><span style="color: #A31515">&#039;utf8&#039;</span><span style="color: #000000">)</span>
+<span style="color: #000000">  @</span><span style="color: #795E26">ValidationErrorHandler</span><span style="color: #000000">()  </span><span style="color: #008000">// mark that method as default schema validation</span>
+<span style="color: #000000">                             </span><span style="color: #008000">// error handler inside that controller</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">async</span><span style="color: #000000"> </span><span style="color: #795E26">handleValidationError</span><span style="color: #000000">(</span><span style="color: #001080">error</span><span style="color: #000000">: </span><span style="color: #267F99">JoiValidationError</span><span style="color: #000000">, </span><span style="color: #001080">request</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpRequest</span><span style="color: #000000">, </span><span style="color: #001080">response</span><span style="color: #000000">: </span><span style="color: #267F99">IHttpResponse</span><span style="color: #000000">) {</span>
+<span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">errorMessage</span><span style="color: #000000"> = </span><span style="color: #001080">Buffer</span><span style="color: #000000">.</span><span style="color: #795E26">from</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;VALIDATION ERROR: &#039;</span><span style="color: #000000"> + </span><span style="color: #001080">error</span><span style="color: #000000">.</span><span style="color: #001080">message</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;utf8&#039;</span><span style="color: #000000">)</span>
 
-<span style="color: #000000">    </span><span style="color: #001080">response</span><span style="color: #000000">.</span><span style="color: #795E26">writeHead</span><span style="color: #000000">(</span><span style="color: #098658">500</span><span style="color: #000000">, {</span>
+<span style="color: #000000">    </span><span style="color: #001080">response</span><span style="color: #000000">.</span><span style="color: #795E26">writeHead</span><span style="color: #000000">(</span><span style="color: #098658">400</span><span style="color: #000000">, {</span>
 <span style="color: #000000">      </span><span style="color: #A31515">&#039;Content-Length&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #267F99">String</span><span style="color: #000000">(</span><span style="color: #001080">errorMessage</span><span style="color: #000000">.</span><span style="color: #001080">length</span><span style="color: #000000">)</span>
 <span style="color: #000000">    })</span>
 <span style="color: #000000">    </span><span style="color: #001080">response</span><span style="color: #000000">.</span><span style="color: #795E26">write</span><span style="color: #000000">(</span><span style="color: #001080">errorMessage</span><span style="color: #000000">)</span>
-
-<span style="color: #000000">    </span><span style="color: #001080">response</span><span style="color: #000000">.</span><span style="color: #795E26">end</span><span style="color: #000000">()</span>
 <span style="color: #000000">  }</span>
 <span style="color: #000000">}</span>
 </code></pre>
@@ -139,14 +142,14 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="controllers_ErrorHandler.html">controllers/<wbr>Error<wbr>Handler</a>
+						<a href="controllers_ValidationErrorHandler.html">controllers/<wbr>Validation<wbr>Error<wbr>Handler</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="controllers_ErrorHandler.html#ErrorHandler" class="tsd-kind-icon">Error<wbr>Handler</a>
+						<a href="controllers_ValidationErrorHandler.html#ValidationErrorHandler" class="tsd-kind-icon">Validation<wbr>Error<wbr>Handler</a>
 					</li>
 				</ul>
 			</nav>
