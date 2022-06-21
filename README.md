@@ -21,7 +21,7 @@
     - [Pretty error pages](#pretty-error-pages)
 - [Benchmarks](#benchmarks)
 - [Credits](#credits)
-- [Documentation](#documentation)
+- [Documentation and samples](#documentation-and-samples)
 - [See also](#see-also)
 
 <a name="install"></a>
@@ -281,11 +281,13 @@ The module makes use of:
 - [Swagger UI](https://github.com/swagger-api/swagger-ui) and
   [@open-api](https://github.com/kogosoftwarellc/open-api)
 
-<a name="documentation"></a>
+<a name="documentation-and-samples"></a>
 
-## Documentation [<a href="#toc">↑</a>]
+## Documentation and samples [<a href="#toc">↑</a>]
 
-The API documentation can be found
+[node-http-server-samples](https://github.com/egomobile/node-http-server-samples#readme) contains a lot of samples, which can be run locally and which demonstrate mostly all feature of this module.
+
+The raw API documentation can be found
 [here](https://egomobile.github.io/node-http-server/).
 
 <a name="see-also"></a>
