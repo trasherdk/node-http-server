@@ -1,5 +1,9 @@
 # Change Log (@egomobile/http-server)
 
+## 0.38.0
+
+- improve `documentation` props of [IControllerRouteOptions](https://egomobile.github.io/node-http-server/interfaces/IControllerRouteOptions.html) and [IControllerRouteWithBodyOptions](https://egomobile.github.io/node-http-server/interfaces/IControllerRouteWithBodyOptions.html) interfaces
+
 ## 0.37.0
 
 - Swagger documents are validated with [openapi-schema-validator module](https://www.npmjs.com/package/openapi-schema-validator) by default now ... this behavior can be changed, updating [validate property](https://egomobile.github.io/node-http-server/interfaces/IControllersSwaggerOptions.html#document)

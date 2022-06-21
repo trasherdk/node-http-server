@@ -115,9 +115,21 @@ export type ControllerRouteArgument2
 export type ControllerRouteArgument3 = number;
 
 /**
+ * This is a cleaned up type for `documentation` property of
+ * an `IControllerRouteOptions` object.
+ */
+export type ControllerRouteDocumentation = Omit<OpenAPIV3.OperationObject, "requestBody">;
+
+/**
  * A possible value for a path of a controller route.
  */
 export type ControllerRoutePath = string;
+
+/**
+ * This is a cleaned up type for `documentation` property of
+ * an `IControllerRouteWithBodyOptions` object.
+ */
+export type ControllerRouteWithBodyDocumentation = OpenAPIV3.OperationObject;
 
 /**
  * Base document of an 'IControllersSwaggerOptions' object.
@@ -396,7 +408,7 @@ export interface IControllerRouteOptions {
     /**
      * Optional Swagger documentation.
      */
-    documentation?: Nilable<OpenAPIV3.OperationObject>;
+    documentation?: Nilable<ControllerRouteDocumentation>;
     /**
      * Indicates, that query parameters should NOT be parsed.
      */
@@ -433,6 +445,10 @@ export interface IControllerRouteOptions {
  * Options for a controller route with a body.
  */
 export interface IControllerRouteWithBodyOptions extends IControllerRouteOptions {
+    /**
+     * @inheritdoc
+     */
+    documentation?: Nilable<ControllerRouteWithBodyDocumentation>;
     /**
      * The expected data of the input format.
      */
