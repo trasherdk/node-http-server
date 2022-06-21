@@ -3,6 +3,7 @@
 ## 0.38.0
 
 - improve `documentation` props of [IControllerRouteOptions](https://egomobile.github.io/node-http-server/interfaces/IControllerRouteOptions.html) and [IControllerRouteWithBodyOptions](https://egomobile.github.io/node-http-server/interfaces/IControllerRouteWithBodyOptions.html) interfaces
+- `npm update`s
 
 ## 0.37.0
 
